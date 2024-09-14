@@ -1,0 +1,102 @@
+.root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+.root {
+  --ColorButtonText: #2196f3;
+  --ColorTextBlack: #212121;
+  --ColorText: #757575;
+  --ColorTextWhite: #fff;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--ColorTextWhite);
+}
+/* ===================================Header================================================*/
+.nav-list {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav-link:hover {
+  color: var(--ColorButtonText);
+}
+.nav-link {
+  color: var(--ColorTextBlack);
+  text-decoration: none;
+}
+.contacts-link {
+  color: var(--ColorText);
+}
+.contacts-link:hover {
+  color: var(--ColorButtonText);
+}
+/* ===================================Main================================================*/
+.hero-title {
+  font-family: var(--font-family);
+  font-weight: 900;
+  font-size: 44px;
+  color: var(--ColorTextWhite);
+}
+.hero-button {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--ColorTextWhite);
+}
+.adventages-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--ColorTextBlack);
+}
+.adventages-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--ColorText);
+}
+.work-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--ColorTextBlack);
+}
+.team-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--ColorTextBlack);
+}
+.team-name {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  color: var(--ColorTextBlack);
+}
+.team-text {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--ColorText);
+}
+/* ===================================Footer================================================*/
+.footer-address {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--ColorTextWhite);
+}
+.contact-mailto {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--ColorText);
+}
+.contact-tel {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--ColorText);
+}
