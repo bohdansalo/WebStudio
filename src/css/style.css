@@ -100,3 +100,49 @@ body {
   font-size: 14px;
   color: var(--ColorText);
 }
+.root {
+  --font-family: "Roboto", sans-serif;
+  --second-family: "Raleway", sans-serif;
+}
+.root {
+  --ColorButtonText: #2196f3;
+  --ColorTextBlack: #212121;
+  --ColorText: #757575;
+  --ColorTextWhite: #fff;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--ColorTextWhite);
+}
+/* ===================================Header================================================*/
+.nav-list {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+}
+.nav-link:hover {
+  color: var(--ColorButtonText);
+}
+.nav-link {
+  color: var(--ColorTextBlack);
+  text-decoration: none;
+}
+.contacts-link {
+  color: var(--ColorText);
+}
+.contacts-link:hover {
+  color: var(--ColorButtonText);
+}
+/* ===================================Main================================================*/
+.project-title {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--ColorTextBlack);
+}
+.ptoject-category {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--ColorTextBlack);
+}
