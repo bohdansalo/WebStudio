@@ -6,8 +6,6 @@
   --ColorText: #757575;
   --ColorTextWhite: #fff;
 }
-.root {
-}
 body {
   font-family: var(--font-family);
   color: var(--ColorTextWhite);
@@ -32,7 +30,51 @@ body {
   color: var(--ColorButtonText);
 }
 /* ===================================Main================================================*/
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-header {
+  padding-top: 30px;
+  display: flex;
+  background-size: cover;
+  justify-content: space-between;
+  background-repeat: no-repeat;
+  padding-bottom: 30px;
+  align-items: center;
+  flex-grow: 1;
+}
+.logo {
+  align-items: center;
+  padding-left: 120px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-left: 100px;
+  padding-right: 345px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  padding-right: 220px;
+  gap: 50px;
+}
+
+/* hero */
+.hero {
+  display: block;
+  align-items: center;
+  background-image: url(../img/background-hero.svg);
+}
 .hero-title {
+  text-align: center;
+  padding: 280px 200px 450px 450px;
+
   font-family: var(--font-family);
   font-weight: 900;
   font-size: 44px;
