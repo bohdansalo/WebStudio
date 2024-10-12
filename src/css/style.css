@@ -12,6 +12,32 @@ body {
   color: var(--ColorTextWhite);
 }
 /* ===================================Header================================================*/
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.container-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+
+  gap: 50px;
+}
+
 .nav-list {
   font-family: var(--font-family);
   font-weight: 500;
@@ -31,44 +57,9 @@ body {
   color: var(--ColorButtonText);
 }
 /* ===================================Main================================================*/
-.container {
-  max-width: 1600px;
-  margin: 0 auto;
-  align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.container-header {
-  padding-top: 30px;
-  display: flex;
-  background-size: cover;
-  justify-content: space-between;
-  background-repeat: no-repeat;
-  padding-bottom: 30px;
-  align-items: center;
-  flex-grow: 1;
-}
-.logo {
-  align-items: center;
-  padding-left: 120px;
-}
-.nav-list {
-  display: flex;
-  align-items: center;
-  gap: 50px;
-  padding-left: 100px;
-  padding-right: 345px;
-}
-.contacts {
-  display: flex;
-  align-items: center;
-  padding-right: 220px;
-  gap: 50px;
-}
 
 /* hero */
 .hero {
-  max-width: 1600px;
   display: flex;
   text-align: center;
   background-color: var(--ColorBackgroundHero);
@@ -88,8 +79,12 @@ body {
   font-weight: 700;
   font-size: 16px;
   background-color: var(--ColorButtonText);
-  padding: 10px 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
   color: var(--ColorTextWhite);
+  border-radius: 4px;
 }
 /* advantages */
 .container-adventages {
@@ -122,7 +117,6 @@ body {
 }
 /* work */
 .container-work {
-  max-width: 1170px;
   display: flex;
   align-items: center;
 }
@@ -142,14 +136,12 @@ body {
 }
 /* team */
 .container-team {
-  max-width: 1170px;
   display: flex;
   align-items: center;
 }
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--ColorTextWhite);
   padding-top: 95px;
-  max-width: 1600px;
 }
 .team-title {
   font-family: var(--font-family);
@@ -169,8 +161,8 @@ body {
 .team-name {
   font-family: var(--font-family);
   font-weight: 500;
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: var(--ColorTextBlack);
 }
@@ -192,12 +184,12 @@ body {
   padding-top: 60px;
 }
 .footer-contacts {
-  padding-top: 20px;
-  padding-left: 215px;
+  margin-top: 20px;
+  margin-left: 215px;
   padding-bottom: 60px;
 }
 .contact-item {
-  padding-top: 9px;
+  margin-top: 9px;
 }
 .footer-address {
   font-family: var(--font-family);
@@ -219,36 +211,57 @@ body {
   color: var(--ColorText);
 }
 
-/* ===================================Header================================================*/
-
-.nav-list {
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 14px;
+/* ===================================portfolio================================================*/
+.container-filter {
+  max-width: 575px;
+  display: flex;
+  text-align: center;
+  padding-top: 95px;
+  padding-bottom: 50px;
 }
-.nav-link:hover {
-  color: var(--ColorButtonText);
+.portfolio-filter {
+  display: flex;
+  gap: 30px;
 }
-.nav-link {
-  color: var(--ColorTextBlack);
-  text-decoration: none;
+.filter-button {
+  border-radius: 4px;
+  padding: 6px;
 }
-.contacts-link {
-  color: var(--ColorText);
+.filter-button:hover {
+  background-color: #2196f3;
 }
-.contacts-link:hover {
-  color: var(--ColorButtonText);
+.filter-button:hover {
+  color: var(--ColorTextWhite);
+  line-height: 162%;
+  letter-spacing: 0.03em;
+  text-align: center;
 }
-/* ===================================Main================================================*/
+/* main */
+.project-img {
+  width: 370px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 30px;
+}
 .project-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 18px;
-  color: var(--ColorTextBlack);
+  line-height: 200%;
+  letter-spacing: 0.06em;
+  padding-top: 20px;
+  color: var(--ColorBackgroundHero);
 }
 .ptoject-category {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  color: var(--ColorTextBlack);
+  line-height: 187%;
+  letter-spacing: 0.03em;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  color: var(--ColorText);
 }
