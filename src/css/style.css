@@ -5,6 +5,7 @@
   --ColorTextBlack: #212121;
   --ColorText: #757575;
   --ColorTextWhite: #fff;
+  --ColorBackgroundHero: #2f303a;
 }
 body {
   font-family: var(--font-family);
@@ -67,16 +68,18 @@ body {
 
 /* hero */
 .hero {
-  display: block;
-  align-items: center;
-  background-image: url(../img/background-hero.svg);
+  max-width: 1600px;
+  display: flex;
+  text-align: center;
+  background-color: var(--ColorBackgroundHero);
+  padding-bottom: 210px;
 }
 .hero-title {
-  text-align: center;
-  padding: 280px 200px 450px 450px;
-
+  padding-top: 200px;
+  padding-bottom: 40px;
   font-family: var(--font-family);
   font-weight: 900;
+  max-width: 700px;
   font-size: 44px;
   color: var(--ColorTextWhite);
 }
@@ -84,7 +87,14 @@ body {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 16px;
+  background-color: var(--ColorButtonText);
+  padding: 10px 10px;
   color: var(--ColorTextWhite);
+}
+/* advantages */
+.container-adventages {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 .adventages-title {
   font-family: var(--font-family);
@@ -92,29 +102,76 @@ body {
   font-size: 14px;
   color: var(--ColorTextBlack);
 }
+.adventages-list {
+  display: flex;
+  align-items: center;
+  max-width: 1170px;
+  gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.adventages-item {
+  max-width: 270px;
+}
 .adventages-text {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   color: var(--ColorText);
 }
+/* work */
+.container-work {
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+}
 .work-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   color: var(--ColorTextBlack);
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.work-list {
+  display: flex;
+  gap: 30px;
+  max-width: 370px;
+}
+/* team */
+.container-team {
+  max-width: 1170px;
+  display: flex;
+  align-items: center;
+}
+.team {
+  background-color: #f5f4fa;
+  padding-top: 95px;
+  max-width: 1600px;
 }
 .team-title {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   color: var(--ColorTextBlack);
+  padding-bottom: 50px;
+  text-align: center;
+}
+.team-list {
+  display: flex;
+  gap: 30px;
+}
+.team-photo {
+  max-width: 270px;
 }
 .team-name {
   font-family: var(--font-family);
   font-weight: 500;
+  padding-top: 30px;
+  padding-bottom: 10px;
   font-size: 16px;
-  text-align: center;
   color: var(--ColorTextBlack);
 }
 .team-text {
@@ -122,13 +179,32 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: var(--ColorText);
+  padding-bottom: 95px;
 }
 /* ===================================Footer================================================*/
+.container-footer {
+  background-color: #2f303a;
+  max-width: 1600px;
+}
+.footer-logo {
+  display: flex;
+  padding-left: 215px;
+  padding-top: 60px;
+}
+.footer-contacts {
+  padding-top: 20px;
+  padding-left: 215px;
+  padding-bottom: 60px;
+}
+.contact-item {
+  padding-top: 9px;
+}
 .footer-address {
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   color: var(--ColorTextWhite);
+  padding-bottom: 9px;
 }
 .contact-mailto {
   font-family: var(--font-family);
