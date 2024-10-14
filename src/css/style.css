@@ -95,19 +95,40 @@ body {
   font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
+  letter-spacing: 0.03em;
   color: var(--ColorTextBlack);
 }
 .adventages-list {
   display: flex;
-  align-items: center;
-  max-width: 1170px;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 .adventages-item {
   max-width: 270px;
+}
+.adventages-item::before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  height: 120px;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+.adventages-item:nth-child(1)::before {
+  background-image: url(../img/decorations/ws-antena.svg);
+}
+.adventages-item:nth-child(2)::before {
+  background-image: url(../img/decorations/ws-time.svg);
+}
+.adventages-item:nth-child(3)::before {
+  background-image: url(../img/decorations/ws-diagrama.svg);
+}
+.adventages-item:nth-child(4)::before {
+  background-image: url(../img/decorations/ws-astronaft.svg);
 }
 .adventages-text {
   font-family: var(--font-family);
@@ -119,6 +140,9 @@ body {
 .container-work {
   display: flex;
   align-items: center;
+}
+.work {
+  padding-bottom: 95px;
 }
 .work-title {
   font-family: var(--font-family);
@@ -140,8 +164,14 @@ body {
   align-items: center;
 }
 .team {
-  background-color: var(--ColorTextWhite);
+  background-color: #f5f4fa;
   padding-top: 95px;
+  padding-bottom: 95px;
+}
+.teammate {
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-title {
   font-family: var(--font-family);
@@ -171,7 +201,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   color: var(--ColorText);
-  padding-bottom: 95px;
+  padding-bottom: 30px;
 }
 /* ===================================Footer================================================*/
 .container-footer {
