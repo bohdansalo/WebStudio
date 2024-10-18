@@ -13,6 +13,7 @@ body {
 }
 /* ===================================Header================================================*/
 .container {
+  font-family: var(--font-family);
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 15px;
@@ -78,15 +79,16 @@ body {
   padding-top: 200px;
 }
 .hero-title {
-  padding-bottom: 40px;
-  font-family: var(--font-family);
+  margin-bottom: 40px;
   font-weight: 900;
   max-width: 700px;
   font-size: 44px;
   color: var(--ColorTextWhite);
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 .hero-button {
-  font-family: var(--font-family);
   color: var(--ColorTextWhite);
   background-color: var(--ColorButtonText);
   font-weight: 700;
@@ -98,14 +100,18 @@ body {
   background-color: #0167bb;
   transform: scale(1.1);
   transition: 500ms;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.1),
+    0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 /* advantages */
 .adventages {
-  margin-top: 95px;
-  margin-bottom: 95px;
+  padding-top: 95px;
+  padding-bottom: 95px;
+
+  line-height: 171%;
+  letter-spacing: 0.03em;
 }
 .adventages-title {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -115,6 +121,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
   gap: 30px;
 }
 .adventages-item {
@@ -132,19 +139,18 @@ body {
   width: 100%;
 }
 .adventages-item:nth-child(1)::before {
-  background-image: url(../img/decorations/ws-antena.svg);
+  background-image: url(../img/decorations/ws-antena-opt-im.svg);
 }
 .adventages-item:nth-child(2)::before {
-  background-image: url(../img/decorations/ws-time.svg);
+  background-image: url(../img/decorations/ws-time-opt.svg);
 }
 .adventages-item:nth-child(3)::before {
-  background-image: url(../img/decorations/ws-diagrama.svg);
+  background-image: url(../img/decorations/ws-diagrama-opt-im.svg);
 }
 .adventages-item:nth-child(4)::before {
-  background-image: url(../img/decorations/ws-astronaft.svg);
+  background-image: url(../img/decorations/ws-astronaft-opt-im.svg);
 }
 .adventages-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 14px;
   color: var(--ColorText);
@@ -158,12 +164,11 @@ body {
   padding-bottom: 95px;
 }
 .work-title {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   color: var(--ColorTextBlack);
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .work-list {
@@ -189,11 +194,10 @@ body {
     0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
 .team-title {
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 36px;
   color: var(--ColorTextBlack);
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   text-align: center;
 }
 .team-list {
@@ -204,58 +208,39 @@ body {
   max-width: 270px;
 }
 .team-name {
-  font-family: var(--font-family);
   font-weight: 500;
   margin-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   font-size: 16px;
   color: var(--ColorTextBlack);
 }
 .team-text {
-  font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
   color: var(--ColorText);
   padding-bottom: 30px;
 }
 /* ===================================Footer================================================*/
-.container-footer {
+.footer {
   background-color: #2f303a;
-  max-width: 1600px;
-}
-.footer-logo {
-  display: flex;
-  margin-left: 215px;
+  padding-left: 215px;
   padding-top: 60px;
-}
-.footer-contacts {
-  margin-top: 20px;
-  margin-left: 215px;
   padding-bottom: 60px;
 }
+.footer-logo {
+  font-family: var(--second-family);
+  font-size: 26px;
+}
+.footer-contacts {
+  padding-top: 9px;
+}
 .contact-item {
-  margin-top: 9px;
-}
-.footer-address {
   font-family: var(--font-family);
-  font-weight: 400;
   font-size: 14px;
+  font-weight: 400;
+  padding-top: 9px;
   color: var(--ColorTextWhite);
-  padding-bottom: 9px;
 }
-.contact-mailto {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--ColorText);
-}
-.contact-tel {
-  font-family: var(--font-family);
-  font-weight: 400;
-  font-size: 14px;
-  color: var(--ColorText);
-}
-
 /* ===================================portfolio================================================*/
 .container-filter {
   max-width: 575px;
