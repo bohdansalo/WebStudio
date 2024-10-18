@@ -11,6 +11,11 @@ body {
   font-family: var(--font-family);
   color: var(--ColorTextWhite);
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 /* ===================================Header================================================*/
 .container {
   font-family: var(--font-family);
@@ -30,12 +35,17 @@ body {
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 }
 .logo {
+  font-family: var(--second-family);
+  font-weight: 700;
+  font-size: 26px;
   letter-spacing: 0.03em;
+  margin-right: 95px;
 }
 .nav-list {
   display: flex;
   align-items: center;
   gap: 50px;
+  margin-right: auto;
 }
 .contacts {
   display: flex;
@@ -54,7 +64,6 @@ body {
 }
 .nav-link {
   color: var(--ColorTextBlack);
-  text-decoration: none;
 }
 .contacts-link {
   color: var(--ColorText);
@@ -74,7 +83,7 @@ body {
       rgba(45, 47, 55, 0.5)
     ),
     url(../img/bg-hero.jpg);
-  background-size: 100%;
+  background-size: cover;
   padding-bottom: 210px;
   padding-top: 200px;
 }
@@ -98,16 +107,14 @@ body {
 }
 .hero-button:hover {
   background-color: #0167bb;
-  transform: scale(1.1);
   transition: 500ms;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.1),
     0 1px 3px 0 rgba(0, 0, 0, 0.1);
 }
-/* advantages */
+
 .adventages {
   padding-top: 95px;
   padding-bottom: 95px;
-
   line-height: 171%;
   letter-spacing: 0.03em;
 }
@@ -121,7 +128,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   gap: 30px;
 }
 .adventages-item {
@@ -155,8 +161,7 @@ body {
   font-size: 14px;
   color: var(--ColorText);
 }
-/* work */
-.container-work {
+.adventage .container-work {
   display: flex;
   align-items: center;
 }
@@ -170,14 +175,11 @@ body {
   text-align: center;
   margin-bottom: 50px;
 }
-
 .work-list {
   display: flex;
   gap: 30px;
-  max-width: 370px;
 }
-/* team */
-.container-team {
+font-wei .container-team {
   display: flex;
   align-items: center;
 }
@@ -220,7 +222,7 @@ body {
   color: var(--ColorText);
   padding-bottom: 30px;
 }
-/* ===================================Footer================================================*/
+
 .footer {
   background-color: #2f303a;
   padding-left: 215px;
@@ -241,7 +243,12 @@ body {
   padding-top: 9px;
   color: var(--ColorTextWhite);
 }
-/* ===================================portfolio================================================*/
+.footer-contacts {
+  padding-top: 9px;
+}
+.contact-item {
+  font-family: var(--font-family);
+}
 .container-filter {
   max-width: 575px;
   display: flex;
@@ -272,8 +279,7 @@ body {
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   transition-duration: 500ms;
 }
-/* main */
-.project:hover {
+font-siz .project:hover {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.1),
     0 1px 3px 0 rgba(0, 0, 0, 0.1);
