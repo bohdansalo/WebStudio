@@ -45,7 +45,6 @@ img {
   display: flex;
   align-items: center;
   gap: 50px;
-  margin-right: auto;
 }
 .contacts {
   display: flex;
@@ -279,7 +278,7 @@ font-wei .container-team {
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   transition-duration: 500ms;
 }
-font-siz .project:hover {
+.project:hover {
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.4), 0 1px 1px 0 rgba(0, 0, 0, 0.1),
     0 1px 3px 0 rgba(0, 0, 0, 0.1);
