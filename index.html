@@ -68,10 +68,84 @@
       <section class="hero">
         <div class="container container-hero">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="hero-button">Замовити послугу</button>
+          <button class="hero-button" data-modal-open>Замовити послугу</button>
+          <div class="backdrob is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal-close-button" data-modal-close>
+                <svg class="modal-close">
+                  <use
+                    href="./src/img/decorations/symbol-defs-modal.svg#icon-close-modal"
+                  ></use>
+                </svg>
+              </button>
+              <h2 class="modal-title">
+                Залиште свої дані, ми вам передзвонимо
+              </h2>
+              <form action="#" class="form">
+                <div class="form-container">
+                  <label class="form-label" for="name">Ім'я</label>
+                  <div class="form-name">
+                    <svg class="form-photo">
+                      <use
+                        href="./src/img/decorations/symbol-defs-modal.svg#icon-person-modal"
+                      ></use>
+                    </svg>
+                    <input class="form-input" type="text" id="name" />
+                  </div>
+                </div>
+                <div class="form-container">
+                  <label class="form-label" for="tell">Телефон</label>
+                  <div class="form-name">
+                    <svg class="form-photo">
+                      <use
+                        href="./src/img/decorations/symbol-defs-modal.svg#icon-phone-modal"
+                      ></use>
+                    </svg>
+                    <input class="form-input" type="tel" id="tell" />
+                  </div>
+                </div>
+                <div class="form-container">
+                  <label class="form-label" for="email">Пошта</label>
+                  <div class="form-name">
+                    <svg class="form-photo">
+                      <use
+                        href="./src/img/decorations/symbol-defs-modal.svg#icon-email-modal"
+                      ></use>
+                    </svg>
+                    <input class="form-input" type="email" id="email" />
+                  </div>
+                </div>
+                <div class="form-container">
+                  <label class="form-label" for="message">Коментар</label>
+                  <div class="message">
+                    <textarea
+                      class="message-text"
+                      id="message"
+                      name="cotact-massege"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="massage-container">
+                  <label class="message-accepts"
+                    ><input
+                      class="message-accept"
+                      type="checkbox"
+                      id="checkbox"
+                    />
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="message-accept-link">Умови договору</a>
+                  </label>
+                </div>
+                <div class="button-container">
+                  <button class="subscribes-btn">Відправити</button>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </section>
-
+      <!-- adventages -->
       <section class="adventages">
         <div class="container container-adventages">
           <ul class="adventages-list">
@@ -473,7 +547,24 @@
             </li>
           </ul>
         </div>
+        <form class="subscribe-form" action="#">
+          <label for="subscribe-email" class="subscribe-titel"
+            >Підпишіться на розсилку</label
+          >
+          <div class="email-holder">
+            <input
+              class="subscribe-input"
+              type="email"
+              id="footer-email"
+              placeholder="E-mail"
+            />
+            <div class="footer-button">
+              <button class="button subscribe-button">Підписатися</button>
+            </div>
+          </div>
+        </form>
       </div>
     </footer>
+    <script src="./src/js/modal.js"></script>
   </body>
 </html>
