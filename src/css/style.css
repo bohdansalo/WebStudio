@@ -52,12 +52,31 @@ img {
   font-weight: 500;
   font-size: 14px;
 }
+
+.nav-link {
+  color: var(--ColorTextBlack);
+  line-height: 1;
+  position: relative;
+}
 .nav-link:hover {
   color: var(--ColorButtonText);
   transition-duration: 250ms;
 }
-.nav-link {
-  color: var(--ColorTextBlack);
+.nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: var(--ColorButtonText);
+  left: 0;
+  height: 3px;
+  border-radius: 4px;
+  margin-top: 10px;
+  width: 0;
+  transition: width 200ms ease-out;
+}
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
 }
 /* contacts */
 .contacts {
@@ -655,7 +674,7 @@ img {
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
-  gap: 30px;
+  gap: 8px;
 }
 .filter-button {
   font-family: var(--font-family);
@@ -684,6 +703,8 @@ img {
 .project-img {
   width: 370px;
 }
+.project-img:hover {
+}
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
@@ -710,4 +731,26 @@ img {
   padding-bottom: 50px;
   padding-left: 25px;
   color: var(--ColorText);
+}
+
+.project-text {
+  padding: 64px 27px;
+  transform: translatex(-100%);
+  position: absolute;
+  transition-duration: 250ms;
+  font-size: 18px;
+  line-height: 156%;
+  letter-spacing: 0.03em;
+  background-color: #2196f3;
+  color: #f5f4fa;
+}
+.project-overlay {
+  position: relative;
+}
+.project-overlay {
+  overflow: hidden;
+}
+.project:hover .project-overlay .project-text {
+  top: 0;
+  transform: translate(0);
 }
