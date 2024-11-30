@@ -165,7 +165,7 @@ img {
   left: 50%;
   color: #757575;
   background-color: #fff;
-  transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%);
   transition-duration: 250ms;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.1), 0 1px 1px 0 rgba(0, 0, 0, 0.13),
     0 1px 3px 0 rgba(0, 0, 0, 0.13);
@@ -175,7 +175,7 @@ img {
   pointer-events: none;
 }
 .backdrob.is-hidden .modal {
-  transform: translate(-50%, -50%);
+  transform: scale(-10);
 }
 .backdrob {
   z-index: 10;
@@ -736,7 +736,7 @@ img {
 
 .project-text {
   padding: 64px 27px;
-  transform: translatex(-100%);
+  transform: translateY(100%);
   position: absolute;
   transition-duration: 250ms;
   font-size: 18px;
